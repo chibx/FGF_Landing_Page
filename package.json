@@ -29,8 +29,8 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@hono/vite-dev-server": "^1.9.3",
-    "@hono/vite-build": "^1.9.3",
+    "@hono/vite-dev-server": "0.25.0",
+    "@hono/vite-build": "1.9.3",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.10.13",
     "@tailwindcss/vite": "^4.1.13",
