@@ -15,12 +15,21 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.9.0",
+    "@vueuse/core": "^14.1.0",
+    "embla-carousel-auto-scroll": "^8.6.0",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-vue": "^8.6.0",
+    "lucide-vue-next": "^0.542.0",
+    "motion": "^12.23.12",
     "vue": "^3.5.28",
-    "vue-router": "^5.0.2"
+    "vue-router": "^5.0.2",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.10.13",
+    "@tailwindcss/vite": "^4.1.13",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/tsconfig": "^0.8.1",
@@ -32,6 +41,7 @@
     "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.32.0",
     "oxlint": "~1.47.0",
+    "tailwindcss": "^4.1.13",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-vue-devtools": "^8.0.6",
