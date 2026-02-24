@@ -74,11 +74,10 @@ app.use(
   })
 );
 
-// export default app;
 
-serve({
-  fetch: app.fetch,
-  port: 3000,
-});
+//serve({
+//  fetch: app.fetch,
+//  port: 3000,
+//});
 
-export default {};
+export default app;

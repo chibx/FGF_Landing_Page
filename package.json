@@ -7,7 +7,6 @@
     "dev": "vite",
     "dev:server": "bun run --hot ./backend/server.ts",
     "build": "run-p type-check \"build-only {@}\" --",
-    "start": "bun run dist/server.js",
     "preview": "vite preview",
     "build-only": "node build.ts",
     "type-check": "vue-tsc --build",
