@@ -2,8 +2,5 @@
   "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/server.js" }
-  ],
-  "engines": {
-    "node": "24.x"
-  }
+  ]
 }
