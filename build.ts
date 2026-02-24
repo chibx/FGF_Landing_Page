@@ -18,7 +18,7 @@ await build({
   plugins: [
     build$1({
       emptyOutDir: false,
-      entry: "backend/server.ts",
+      entry: "api/server.ts",
       output: "index.js",
     }),
   ],
