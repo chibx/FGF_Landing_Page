@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
+import { handle } from "@hono/node-server/vercel";
 import { serveStatic } from "@hono/node-server/serve-static";
 import * as yup from "yup";
 import { Pool } from "pg";
@@ -68,16 +69,15 @@ app.use(
   "/*",
   serveStatic({
     root: "./static",
-//    async getContent() {
-//      return null;
-//    },
+    //    async getContent() {
+    //      return null;
+    //    },
   })
 );
-
 
 //serve({
 //  fetch: app.fetch,
 //  port: 3000,
 //});
 
-export default app;
+export default handle(app);
