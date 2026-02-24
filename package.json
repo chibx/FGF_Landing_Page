@@ -8,7 +8,7 @@
     "dev:server": "bun run --hot ./backend/server.ts",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-    "build-only": "node build.ts",
+    "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
