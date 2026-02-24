@@ -1,8 +1,7 @@
 import "dotenv/config";
 import { Hono } from "hono";
-//import { serve } from "@hono/node-server";
- import { serveStatic } from "hono/bun";
-//import { serveStatic } from "hono/serve-static";
+import { serve } from "@hono/node-server";
+import { serveStatic } from "@hono/node-server/serve-static";
 import * as yup from "yup";
 import { Pool } from "pg";
 
@@ -75,11 +74,11 @@ app.use(
   })
 );
 
- export default app;
+// export default app;
 
-//serve({
-//  fetch: app.fetch,
-//  port: 3000,
-//});
+serve({
+  fetch: app.fetch,
+  port: 3000,
+});
 
-//export default {};
+export default {};
