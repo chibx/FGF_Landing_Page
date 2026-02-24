@@ -2,6 +2,8 @@
 import Carousel from './HomeCarousel.vue';
 import { ref, reactive } from 'vue';
 import { Send, MapPin, Phone, Mail, Clock, Users, Music, BookOpen } from 'lucide-vue-next';
+import { Icon } from "@iconify/vue"
+
 
 const formData = reactive({
     full_name: '',
@@ -61,8 +63,8 @@ async function handleSubmit() {
         <!-- About Section -->
         <section class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-6xl mx-auto">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="w-full lg:w-1/2">
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+                    <div class="w-full lg:w-1/2 max-w-[500px]">
                         <div class="overflow-hidden rounded-2xl shadow-2xl shadow-gray-400/50">
                             <img class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
                                 src="/vigil.jpg" alt="Prayer Vigil" />
@@ -78,15 +80,18 @@ async function handleSubmit() {
                             Join us for a powerful night of prayer, worship, and spiritual warfare.
                             As believers, we understand that life is a spiritual battle, and through
                             prayer and fellowship, we find strength and victory in Christ.
+                            <br><br>
+                            <strong>Ministering:</strong> Pastor Kola Ayeye, Pastor Joshua Tobi, Pastor Emeka Ogbonna &
+                            other anointed ministers.
                         </p>
                         <div class="flex flex-wrap gap-4 pt-4">
                             <div class="flex items-center gap-2 text-gray-700">
                                 <Clock class="w-5 h-5 text-rose-500" />
-                                <span>All Night</span>
+                                <span>Friday, February 27, 2026 - 11PM Prompt</span>
                             </div>
                             <div class="flex items-center gap-2 text-gray-700">
                                 <MapPin class="w-5 h-5 text-rose-500" />
-                                <span>FGF Headquarters</span>
+                                <span>FGF Church Auditorium, 258 Ikorodu Road, Obanikoro, Lagos</span>
                             </div>
                         </div>
                     </div>
@@ -186,6 +191,8 @@ async function handleSubmit() {
                 <div class="text-center mb-10">
                     <h2 class="text-3xl font-bold mb-4">Register for the Vigil</h2>
                     <p class="text-gray-400">Fill in your details to secure your spot at this life-changing event</p>
+                    <p class="text-rose-400 text-sm mt-2 font-medium">Prayer meetings like this change destinies. Kindly
+                        invite at least 2 people!</p>
                 </div>
 
                 <form @submit.prevent="handleSubmit" class="space-y-6">
@@ -250,7 +257,8 @@ async function handleSubmit() {
                         <img src="/fgf_logo.jpg" alt="FGF Logo" class="h-12 w-auto rounded-lg" />
                         <div>
                             <h3 class="font-bold text-white">FGF Ministry</h3>
-                            <p class="text-gray-400 text-sm">Faith, Grace & Fellowship</p>
+                            <p class="text-gray-400 text-sm">Restoring the Ancient Landmarks; Lifting up a standard;
+                                Raising Kingdom Builders.</p>
                         </div>
                     </div>
 
@@ -263,12 +271,26 @@ async function handleSubmit() {
                             <Mail class="w-4 h-4 text-rose-500" />
                             <span class="text-sm">info@fgfministry.org</span>
                         </div>
+                        <a href="https://www.facebook.com/FriendsOfGodFellowship" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 hover:text-rose-500 transition-colors">
+                            <!-- <Facebook class="w-4 h-4 text-rose-500" /> -->
+                            <Icon icon="mdi:facebook" class="w-4 h-4 text-rose-500" />
+                            <span class="text-sm">Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@friendsofgodfellowship" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 hover:text-rose-500 transition-colors">
+                            <!-- <Youtube class="w-4 h-4 text-rose-500" /> -->
+                            <Icon icon="mdi:youtube" class="w-4 h-4 text-rose-500" />
+                            <span class="text-sm">YouTube</span>
+                        </a>
                     </div>
                 </div>
 
                 <div class="mt-8 pt-8 border-t border-gray-800 text-center">
                     <p class="text-gray-500 text-sm">
-                        &copy; {{ new Date().getFullYear() }} FGF Ministry. All rights reserved.
+                        &copy; {{ new Date().getFullYear() }} FGF Ministration. All rights reserved.
                     </p>
                 </div>
             </div>

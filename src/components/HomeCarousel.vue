@@ -68,12 +68,12 @@ onMounted(() => {
 
         <div class="absolute top-0 left-0 w-full h-full bg-black/60">
             <div class="flex flex-col items-center justify-center h-full">
-                <h1 ref="titleRef" class="text-4xl font-bold text-white">
+                <h1 ref="titleRef" class="text-3xl min-[420px]:text-4xl md:text-5xl font-bold text-white">
                     <span v-for="(char, index) in titleText" :key="index" class="letter inline-block opacity-0">
                         {{ char === ' ' ? '\u00A0' : char }}
                     </span>
                 </h1>
-                <h2 ref="subtitleRef" class="text-3xl font-semibold text-white">
+                <h2 ref="subtitleRef" class="text-2xl min-[420px]:text-3xl md:text-5xl font-semibold text-white">
                     <span v-for="(char, index) in subtitleText" :key="index" class="letter inline-block opacity-0">
                         {{ char === ' ' ? '\u00A0' : char }}
                     </span>
@@ -82,9 +82,10 @@ onMounted(() => {
 
             <div>
                 <!--For Arrow-->
-                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer" @click="scroll">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-15 w-15 text-white animate-bounce" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
+                <div class="absolute bottom-5 sm:bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer"
+                    @click="scroll">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-15 md:w-15 text-white animate-bounce"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
