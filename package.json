@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:server": "bun run --hot ./backend/server.ts",
     "build": "run-p type-check \"build-only {@}\" --",
+    "start": "bun run dist/server.js",
     "preview": "vite preview",
-    "build-only": "vite build",
+    "build-only": "node build.ts",
     "type-check": "vue-tsc --build",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
@@ -17,6 +19,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.9.0",
     "@vueuse/core": "^14.1.0",
+    "dotenv": "^17.3.1",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-vue": "^8.6.0",
@@ -29,11 +32,12 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@hono/vite-dev-server": "0.25.0",
+    "@hono/node-server": "^1.19.9",
     "@hono/vite-build": "1.9.3",
+    "@tailwindcss/vite": "^4.1.13",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^24.10.13",
-    "@tailwindcss/vite": "^4.1.13",
+    "@types/pg": "^8.16.0",
     "@vitejs/plugin-vue": "^6.0.4",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/tsconfig": "^0.8.1",
