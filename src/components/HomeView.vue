@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Carousel from './HomeCarousel.vue';
 import { ref, reactive } from 'vue';
-import { Send, MapPin, Phone, Mail, Clock, Users, Music, BookOpen } from 'lucide-vue-next';
+import { Send, MapPin, Mail, Clock, Users, Music, BookOpen } from 'lucide-vue-next';
 import { Icon } from "@iconify/vue"
 
 
@@ -263,13 +263,13 @@ async function handleSubmit() {
                     </div>
 
                     <div class="flex flex-wrap justify-center gap-6 text-gray-400">
-                        <div class="flex items-center gap-2">
+                        <!-- <div class="flex items-center gap-2">
                             <Phone class="w-4 h-4 text-rose-500" />
                             <span class="text-sm">Contact Us</span>
-                        </div>
+                        </div> -->
                         <div class="flex items-center gap-2">
                             <Mail class="w-4 h-4 text-rose-500" />
-                            <span class="text-sm">info@fgfministry.org</span>
+                            <span class="text-sm">fgfofficiall@gmail.com</span>
                         </div>
                         <a href="https://www.facebook.com/FriendsOfGodFellowship" target="_blank"
                             rel="noopener noreferrer"
