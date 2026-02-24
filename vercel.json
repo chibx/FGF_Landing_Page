@@ -1,5 +1,5 @@
 {
-  "version": "vigil@1.0.0",
+  "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/server.js" }
   ],
