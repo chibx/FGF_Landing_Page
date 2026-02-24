@@ -29,7 +29,6 @@ await build({
     copyPublicDir: false,
     rollupOptions: {
       output: {
-        esModule: true,
         format: "esm",
       },
     },

@@ -1,6 +1,8 @@
 import "dotenv/config";
 import { Hono } from "hono";
-import { serveStatic } from "hono/bun";
+//import { serve } from "@hono/node-server";
+ import { serveStatic } from "hono/bun";
+//import { serveStatic } from "hono/serve-static";
 import * as yup from "yup";
 import { Pool } from "pg";
 
@@ -63,6 +65,21 @@ app.post("/api/register", async (c) => {
   }
 });
 
-app.use("/*", serveStatic({ root: "./static" }));
+app.use(
+  "/*",
+  serveStatic({
+    root: "./static",
+//    async getContent() {
+//      return null;
+//    },
+  })
+);
 
-export default app;
+ export default app;
+
+//serve({
+//  fetch: app.fetch,
+//  port: 3000,
+//});
+
+//export default {};
