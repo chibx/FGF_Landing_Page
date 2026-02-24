@@ -13,6 +13,5 @@ body,
 
 #app {
   background-color: rgb(245, 245, 245);
-  padding-bottom: 2rem;
 }
 </style>
