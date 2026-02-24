@@ -19,7 +19,7 @@ await build({
     build$1({
       emptyOutDir: false,
       entry: "backend/server.ts",
-      output: "server.js",
+      output: "index.js",
     }),
   ],
   appType: "custom",
