@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { Hono } from "hono";
-import { serve } from "@hono/node-server";
-import { handle } from "@hono/node-server/vercel";
+// import { serve } from "@hono/node-server";
+// import { handle } from "@hono/node-server/vercel";
 import { serveStatic } from "@hono/node-server/serve-static";
 import * as yup from "yup";
 import { Pool } from "pg";
@@ -80,4 +80,4 @@ app.use(
 //  port: 3000,
 //});
 
-export default handle(app);
+export default app;
