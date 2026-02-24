@@ -37,7 +37,6 @@ app.post("/api/register", async (c) => {
 
   for (const [key, value] of form.entries()) {
     if (value instanceof File) continue;
-    console.log(key, value);
     const k = key as keyof yup.InferType<typeof schema>;
     // @ts-expect-error - we know the key exists in the schema
     body[k] = k == "first_timer" ? (value == "true" ? true : false) : value;
@@ -45,7 +44,6 @@ app.post("/api/register", async (c) => {
 
   try {
     const validated = await schema.validate(body);
-    console.log(validated);
     pool.query(
       "INSERT INTO registrations (name, email, address, phone_number, first_timer) VALUES ($1, $2, $3, $4, $5)",
       [
@@ -59,7 +57,6 @@ app.post("/api/register", async (c) => {
     return c.json({ success: true });
   } catch (error) {
     if (error instanceof yup.ValidationError) {
-      console.error(error);
       return c.json({ success: false, error: error.message }, 400);
     }
     return c.json({ success: false, error: "Something went wrong, please try again later" }, 500);
