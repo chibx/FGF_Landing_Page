@@ -24,7 +24,7 @@ await build({
   ],
   appType: "custom",
   build: {
-    outDir: "dist",
+    outDir: "dist/api",
     emptyOutDir: false,
     copyPublicDir: false,
     rollupOptions: {
