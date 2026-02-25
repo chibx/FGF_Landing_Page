@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Carousel from './HomeCarousel.vue';
 import { ref, reactive } from 'vue';
-import { Send, MapPin, Mail, Clock, Users, Music, BookOpen } from 'lucide-vue-next';
+import { Send, MapPin, Mail, Clock } from 'lucide-vue-next';
 import { Icon } from "@iconify/vue"
 
 
