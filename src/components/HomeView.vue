@@ -108,41 +108,71 @@ async function handleSubmit() {
                         community fellowship</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div
                         class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
-                        <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+                        <!-- <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
                             <BookOpen class="w-6 h-6 text-rose-600" />
-                        </div>
+                        </div> -->
                         <h3 class="font-semibold text-gray-900 mb-2">Prayer Sessions</h3>
                         <p class="text-gray-600 text-sm">Intensive prayer and intercession for breakthroughs</p>
                     </div>
 
                     <div
                         class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
-                        <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+                        <!-- <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
                             <Music class="w-6 h-6 text-rose-600" />
-                        </div>
+                        </div> -->
                         <h3 class="font-semibold text-gray-900 mb-2">Worship</h3>
                         <p class="text-gray-600 text-sm">Soul-lifting praise and worship experience</p>
                     </div>
 
                     <div
                         class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
-                        <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+                        <!-- <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
                             <Users class="w-6 h-6 text-rose-600" />
-                        </div>
+                        </div> -->
                         <h3 class="font-semibold text-gray-900 mb-2">Fellowship</h3>
                         <p class="text-gray-600 text-sm">Connect with believers and build community</p>
                     </div>
 
                     <div
                         class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
-                        <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+                        <!-- <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
                             <Send class="w-6 h-6 text-rose-600" />
-                        </div>
+                        </div> -->
                         <h3 class="font-semibold text-gray-900 mb-2">Ministration</h3>
                         <p class="text-gray-600 text-sm">Powerful word and spiritual ministration</p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
+                        <h3 class="font-semibold text-gray-900 mb-2">Deliverance</h3>
+                        <p class="text-gray-600 text-sm">Prayer deliverance and breaking of strongholds</p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
+                        <h3 class="font-semibold text-gray-900 mb-2">Undoing Yokes</h3>
+                        <p class="text-gray-600 text-sm">Breaking long term yokes and bondages</p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
+                        <h3 class="font-semibold text-gray-900 mb-2">Healings</h3>
+                        <p class="text-gray-600 text-sm">Divine healing and restoration</p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
+                        <h3 class="font-semibold text-gray-900 mb-2">Manifestations</h3>
+                        <p class="text-gray-600 text-sm">Manifestations of the Spirit</p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-lg shadow-gray-200/50 hover:shadow-xl transition-shadow border border-rose-100">
+                        <h3 class="font-semibold text-gray-900 mb-2">Divine Guidance</h3>
+                        <p class="text-gray-600 text-sm">Direction and counsel from the Holy Spirit</p>
                     </div>
                 </div>
             </div>
@@ -291,6 +321,10 @@ async function handleSubmit() {
                 <div class="mt-8 pt-8 border-t border-gray-800 text-center">
                     <p class="text-gray-500 text-sm">
                         &copy; {{ new Date().getFullYear() }} FGF Ministration. All rights reserved.
+                    </p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        Created with ❤️ by <a href="https://chibx.vercel.app" target="_blank" rel="noopener noreferrer"
+                            class="text-rose-500 hover:text-rose-400 transition-colors">Chiboy</a>
                     </p>
                 </div>
             </div>
